@@ -18,7 +18,7 @@ export function TextSplitReveal({ children, className = "", delay = 0 }: TextSpl
 
   const container = {
     hidden: { opacity: 0 },
-    visible: (i = 1) => ({
+    visible: (_i = 1) => ({
       opacity: 1,
       transition: { staggerChildren: 0.08, delayChildren: delay },
     }),

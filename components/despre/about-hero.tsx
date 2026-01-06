@@ -109,7 +109,7 @@ export function AboutHero() {
                 className="absolute -bottom-4 sm:-bottom-6 md:-bottom-8 -left-4 sm:-left-6 md:-left-8 bg-white rounded-2xl sm:rounded-3xl p-4 sm:p-6 shadow-2xl max-w-[calc(100%+2rem)] sm:max-w-sm"
               >
                 <p className="font-sans text-sm sm:text-base text-[#011936] italic leading-relaxed mb-2 sm:mb-3">
-                  "Vindecarea nu înseamnă că durerea nu a existat niciodată. Înseamnă că nu mai controlează viața ta."
+                  &ldquo;Vindecarea nu înseamnă că durerea nu a existat niciodată. Înseamnă că nu mai controlează viața ta.&rdquo;
                 </p>
                 <div className="flex items-center gap-2 sm:gap-3">
                   <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gradient-to-br from-[#CB7C89] to-[#603140]" />

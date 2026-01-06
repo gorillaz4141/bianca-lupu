@@ -112,7 +112,7 @@ export function TestimonialsGrid() {
                     testimonial.featured ? "text-[#F1DEDE]/90" : "text-[#011936]/80"
                   }`}
                 >
-                  "{testimonial.content}"
+                  &ldquo;{testimonial.content}&rdquo;
                 </p>
 
                 {/* Author */}

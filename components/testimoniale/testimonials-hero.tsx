@@ -36,7 +36,7 @@ export function TestimonialsHero() {
         transition={{ duration: 1.5 }}
         className="absolute top-1/4 left-10 md:left-20"
       >
-        <span className="text-[200px] md:text-[300px] font-sans text-[#F1DEDE] leading-none">"</span>
+        <span className="text-[200px] md:text-[300px] font-sans text-[#F1DEDE] leading-none">&ldquo;</span>
       </motion.div>
 
       <motion.div
@@ -45,7 +45,7 @@ export function TestimonialsHero() {
         transition={{ duration: 1.5, delay: 0.3 }}
         className="absolute bottom-1/4 right-10 md:right-20 rotate-180"
       >
-        <span className="text-[200px] md:text-[300px] font-sans text-[#F1DEDE] leading-none">"</span>
+        <span className="text-[200px] md:text-[300px] font-sans text-[#F1DEDE] leading-none">&rdquo;</span>
       </motion.div>
 
       {/* Content */}
