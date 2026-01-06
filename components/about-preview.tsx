@@ -44,7 +44,7 @@ export function AboutPreview() {
             {/* Credentials */}
             <RevealSection delay={0.2}>
               <div className="grid grid-cols-3 gap-4 mb-10">
-                {credentials.map((cred, index) => (
+                {credentials.map((cred) => (
                   <motion.div
                     key={cred.label}
                     whileHover={{ y: -5 }}
@@ -99,7 +99,7 @@ export function AboutPreview() {
                   className="absolute -bottom-6 -left-6 bg-white rounded-2xl p-6 shadow-xl max-w-[250px]"
                 >
                   <p className="font-sans text-sm text-[#011936] italic leading-relaxed">
-                    "Terapia începe cu o relație. Vindecarea începe cu încredere."
+                    &ldquo;Terapia începe cu o relație. Vindecarea începe cu încredere.&rdquo;
                   </p>
                   <div className="mt-3 flex items-center gap-2">
                     <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#CB7C89] to-[#603140]" />

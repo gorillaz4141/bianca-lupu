@@ -40,7 +40,8 @@ const benefits = [
 
 export function BenefitsSection() {
   const ref = useRef(null)
-  const { scrollYProgress } = useScroll({
+  // Scroll progress available for future use
+  const { scrollYProgress: _scrollYProgress } = useScroll({
     target: ref,
     offset: ["start end", "end start"],
   })
