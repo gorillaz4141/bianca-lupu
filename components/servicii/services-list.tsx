@@ -2,12 +2,12 @@
 
 import { motion } from "framer-motion"
 import { RevealSection } from "@/components/reveal-section"
-import { User, Users, Video, ClipboardCheck, Heart, Brain } from "lucide-react"
+import { User, Users, Video, Heart, Home } from "lucide-react"
 
 const services = [
   {
     icon: User,
-    title: "Terapie Individuală",
+    title: "PSIHOterapie Individuală",
     subtitle: "Spațiu personal de explorare",
     description:
       "Ședințe one-on-one în care lucrăm împreună la înțelegerea și transformarea tiparelor care te împiedică să trăiești viața pe care o dorești.",
@@ -24,7 +24,7 @@ const services = [
   },
   {
     icon: Users,
-    title: "Terapie de Cuplu",
+    title: "PSIHOterapie de Cuplu",
     subtitle: "Reconectare și înțelegere",
     description:
       "Spațiu neutru pentru ambii parteneri, unde putem explora dinamicile relației și găsi căi de comunicare mai bune și mai sănătoase.",
@@ -41,7 +41,7 @@ const services = [
   },
   {
     icon: Video,
-    title: "Terapie Online",
+    title: "PSIHOterapie Online",
     subtitle: "Flexibilitate și accesibilitate",
     description:
       "Aceleași servicii de calitate, disponibile de oriunde te-ai afla. Perfect pentru cei cu program încărcat sau care locuiesc în afara Bucureștiului.",
@@ -57,38 +57,21 @@ const services = [
     frequency: "Flexibil",
   },
   {
-    icon: ClipboardCheck,
-    title: "Evaluare Psihologică",
-    subtitle: "Înțelegere completă",
+    icon: Home,
+    title: "Terapie de Familie",
+    subtitle: "Echilibru și armonie în sistem",
     description:
-      "Evaluare complexă pentru a înțelege mai bine profilul tău psihologic, punctele forte și zonele care necesită atenție.",
+      "Un spațiu sigur pentru toți membrii familiei, unde explorăm tiparele de interacțiune și transformăm tensiunile în punți de conexiune și sprijin reciproc.",
     details: [
-      "Evaluare personalitate",
-      "Screening anxietate/depresie",
-      "Evaluare cognitivă",
-      "Raport scris detaliat",
-      "Recomandări personalizate",
-      "Discuție feedback",
+      "Dificultăți de comunicare între părinți și copii",
+      "Gestionarea crizelor de creștere și a etapelor de tranziție",
+      "Conflicte între frați sau între generații",
+      "Impactul evenimentelor traumatice sau al pierderilor în familie",
+      "Sprijin în procesul de separare sau divorț",
+      "Stabilirea unor limite sănătoase și a unei autorități calde",
     ],
-    duration: "2-3 ore",
-    frequency: "Ședință unică",
-  },
-  {
-    icon: Brain,
-    title: "CBT Intensiv",
-    subtitle: "Program focalizat pe rezultate",
-    description:
-      "Program structurat de terapie cognitiv-comportamentală pentru cei care doresc rezultate mai rapide și sunt dispuși să investească mai mult.",
-    details: [
-      "2 ședințe pe săptămână",
-      "Exerciții între ședințe",
-      "Monitorizare progres",
-      "Tehnici practice",
-      "Durată redusă totală",
-      "Rezultate accelerate",
-    ],
-    duration: "50 minute",
-    frequency: "Bi-săptămânal",
+    duration: "90 minute",
+    frequency: "La 2 săptămâni",
   },
   {
     icon: Heart,
@@ -118,7 +101,7 @@ export function ServicesList() {
         <RevealSection className="text-center mb-20">
           <span className="font-mono text-sm tracking-[0.2em] uppercase text-[#CB7C89] mb-4 block">Ce Oferim</span>
           <h2 className="font-sans text-3xl md:text-4xl lg:text-5xl font-bold text-[#011936] mb-6">
-            Servicii de Psihoterapie
+            Servicii de PSIHOterapie
           </h2>
           <p className="font-mono text-[#011936]/70 max-w-2xl mx-auto">
             Fiecare serviciu este creat pentru a-ți oferi exact tipul de suport de care ai nevoie.

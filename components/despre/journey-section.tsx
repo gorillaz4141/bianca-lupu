@@ -2,36 +2,43 @@
 
 import { RevealSection } from "@/components/reveal-section"
 import { TextRevealScroll } from "@/components/text-reveal-scroll"
-import { Compass, Users, BookHeart, Sparkles } from "lucide-react"
+import { Compass, BookHeart, Sparkles, Palette, Globe } from "lucide-react"
 
 const milestones = [
   {
     icon: Sparkles,
-    year: "Începuturile",
-    title: "Fascinația pentru psihologia umană",
+    year: "Începutul",
+    title: "Înțelegerea pașilor mici",
     description:
-      "Încă din adolescență am fost fascinată de complexitatea minții umane și de modul în care trăirile noastre interioare ne modelează viața.",
+      "Călătoria mea a început cu fascinația pentru modul în care ne construim ca oameni. Prin experiența în Grecia și lucrul în terapia ABA, am învățat să observ detaliile fine ale comportamentului și importanța răbdării. Fiecare mare schimbare începe cu un pas discret, dar sigur.",
   },
   {
     icon: BookHeart,
     year: "Formarea",
-    title: "Studii și specializări intensive",
+    title: "Știință și simțire în echilibru",
     description:
-      "Am dedicat ani de studiu pentru a înțelege profund mecanismele psihice și a învăța metode validate științific de intervenție terapeutică.",
+      "Masterul în Experiențială (PEU) și formarea în Psihoterapie Integrativă mi-au oferit limbajul prin care mintea și corpul încep să dialogheze. Aleg aceste școli pentru că pun preț pe trăirea de „aici și acum”, transformând PSIHOterapia din discuție în experiență vie de regăsire.",
   },
   {
-    icon: Users,
-    year: "Practica",
-    title: "Peste 200 de clienți ajutați",
+    icon: Globe,
+    year: "Roma",
+    title: "Orizonturi noi asupra profunzimii umane",
     description:
-      "Fiecare persoană cu care am lucrat m-a învățat ceva nou despre reziliența umană și despre puterea transformării.",
+      "Specializarea în Psihosexologie la Sapienza Università di Roma a fost momentul în care am înțeles că sănătatea emoțională e incompletă fără acceptarea identității și a intimității noastre. Abordez teme sensibile cu deschidere și profesionalism, într-un spațiu fără tabuuri și fără judecată.",
+  },
+  {
+    icon: Palette,
+    year: "Arta ca punte",
+    title: "Creativitatea ca resursă de vindecare",
+    description:
+      "Cred cu tărie că acolo unde cuvintele se opresc, începe vindecarea prin simbol. Prin Art-Terapie, culoare și metaforă, scoatem la lumină emoții pe care mintea le ține închise. Nu e nevoie de talent — doar de curajul de a simți.",
   },
   {
     icon: Compass,
     year: "Misiunea",
-    title: "Ghidarea către echilibru",
+    title: "Să te însoțesc spre întregire",
     description:
-      "Astăzi, misiunea mea este să creez un spațiu sigur unde fiecare persoană să se poată regăsi pe sine și să își descopere puterea interioară.",
+      "Misiunea mea este să te ajut să îți recapeți liniștea interioară și să îți construiești o reziliență autentică. La final, îmi doresc să simți că ai energie, claritate și instrumente reale pentru o viață trăită cu sens.",
   },
 ]
 
@@ -50,7 +57,7 @@ export function JourneySection() {
 
         <div className="max-w-4xl mx-auto mb-20">
           <TextRevealScroll
-            text="Nu am ales psihoterapia doar ca profesie. Am ales-o ca mod de viață, ca vocație care îmi permite să fiu martor la cele mai profunde transformări umane. Fiecare zi în acest domeniu îmi confirmă că vindecarea este posibilă și că nu trebuie să trecem prin viață singuri."
+            text="Dincolo de etichete, te văd pe tine. Nu am ales PSIHOterapia doar ca profesie, ci ca o formă de prezență: un spațiu în care durerea poate fi ținută în siguranță, iar schimbarea poate prinde rădăcini."
             className="font-sans text-xl md:text-2xl lg:text-3xl font-medium text-[#011936] leading-relaxed text-center"
           />
         </div>
@@ -94,6 +101,13 @@ export function JourneySection() {
             ))}
           </div>
         </div>
+
+        <RevealSection delay={0.4}>
+          <p className="mt-16 text-center font-sans text-base md:text-lg italic text-[#011936]/70 max-w-3xl mx-auto">
+            Fiecare etapă a studiilor mele a fost o piesă de puzzle care m-a ajutat să înțeleg întregul care ești tu
+            astăzi.
+          </p>
+        </RevealSection>
       </div>
     </section>
   )

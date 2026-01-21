@@ -63,8 +63,8 @@ export function ServicesHero() {
               transition={{ duration: 0.6, delay: 0.8 }}
               className="font-mono text-base sm:text-lg text-[#011936]/70 leading-relaxed"
             >
-              Fiecare persoană are nevoie de un tip diferit de suport. Ofer servicii adaptate nevoilor tale, fie că
-              preferi întâlniri față-în-față în București sau ședințe online din confortul casei tale.
+              Fiecare persoană are nevoie de un tip diferit de sprijin. Ofer servicii de PSIHOterapie adaptate nevoilor
+              tale, fie că preferi întâlniri față-în-față în București, fie ședințe online din confortul casei tale.
             </motion.p>
           </div>
 

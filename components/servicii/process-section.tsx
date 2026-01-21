@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import { RevealSection } from "@/components/reveal-section"
-import { Phone, MessageSquare, CalendarCheck, ArrowRight, Heart, Sparkles } from "lucide-react"
+import { Phone, MessageSquare, CalendarCheck, ArrowRight, Heart, Sparkles, ClipboardCheck, RefreshCw } from "lucide-react"
 
 const steps = [
   {
@@ -40,6 +40,20 @@ const steps = [
     description:
       "Pas cu pas, vei observa schimbări pozitive în viața ta. Încheiem când te simți pregătit să mergi mai departe singur.",
   },
+  {
+    icon: ClipboardCheck,
+    number: "06",
+    title: "Evaluare și Recapitulare",
+    description:
+      "Analizăm periodic progresele făcute. Este momentul în care celebrăm reușitele și ajustăm direcția PSIHOterapiei pentru a rămâne aliniați cu nevoile tale actuale.",
+  },
+  {
+    icon: RefreshCw,
+    number: "07",
+    title: "Ședința de Follow-up",
+    description:
+      "O vizită de „întreținere” la câteva luni după încheierea procesului. Ne asigurăm că noile tale obiceiuri sunt solide și că liniștea interioară s-a integrat în stilul tău de viață.",
+  },
 ]
 
 export function ProcessSection() {
@@ -65,7 +79,7 @@ export function ProcessSection() {
           {/* Connection line */}
           <div className="absolute top-1/2 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#CB7C89]/30 to-transparent hidden lg:block" />
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7 gap-8">
             {steps.map((step, index) => (
               <RevealSection key={step.number} delay={index * 0.1}>
                 <motion.div whileHover={{ y: -10 }} className="relative flex flex-col items-center text-center group">

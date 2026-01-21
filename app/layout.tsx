@@ -5,6 +5,7 @@ import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 import { ScrollToTop } from "@/components/scroll-to-top";
+import { FloatingActions } from "@/components/floating-actions";
 import {
   Playfair_Display,
   Fira_Code,
@@ -75,6 +76,7 @@ export default function RootLayout({
     >
       <body className="font-mono antialiased">
         <ScrollToTop />
+        <FloatingActions />
         {children}
         <Analytics />
       </body>

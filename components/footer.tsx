@@ -1,8 +1,15 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { motion } from "framer-motion"
-import { Phone, Mail, MapPin, Instagram, Facebook, Linkedin } from "lucide-react"
+import Link from "next/link";
+import { motion } from "framer-motion";
+import {
+  Phone,
+  Mail,
+  MapPin,
+  Instagram,
+  Facebook,
+  Linkedin,
+} from "lucide-react";
 
 export function Footer() {
   return (
@@ -22,11 +29,15 @@ export function Footer() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h3 className="font-sans text-3xl font-bold text-[#011936] mb-2">Bianca Lupu</h3>
-              <p className="font-mono text-sm text-[#603140] tracking-[0.2em] uppercase mb-6">Psihoterapeut</p>
+              <h3 className="font-sans text-3xl font-bold text-[#011936] mb-2">
+                Bianca Lupu
+              </h3>
+              <p className="font-mono text-sm text-[#603140] tracking-[0.2em] uppercase mb-6">
+                Psihoterapeut
+              </p>
               <p className="font-mono text-[#011936]/70 leading-relaxed max-w-md mb-8">
-                Un spațiu sigur pentru gândurile tale cele mai vulnerabile. Terapia începe cu o relație, vindecarea
-                începe cu încredere.
+                Un spațiu sigur pentru gândurile tale cele mai vulnerabile.
+                Terapia începe cu o relație, vindecarea începe cu încredere.
               </p>
               <div className="flex gap-4">
                 {[
@@ -55,7 +66,9 @@ export function Footer() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            <h4 className="font-sans text-lg font-semibold text-[#011936] mb-6">Navigare</h4>
+            <h4 className="font-sans text-lg font-semibold text-[#011936] mb-6">
+              Navigare
+            </h4>
             <ul className="space-y-3">
               {[
                 { label: "Acasă", href: "/" },
@@ -84,7 +97,9 @@ export function Footer() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <h4 className="font-sans text-lg font-semibold text-[#011936] mb-6">Contact</h4>
+            <h4 className="font-sans text-lg font-semibold text-[#011936] mb-6">
+              Contact
+            </h4>
             <ul className="space-y-4">
               <li>
                 <a
@@ -95,15 +110,7 @@ export function Footer() {
                   0765 844 042
                 </a>
               </li>
-              <li>
-                <a
-                  href="mailto:contact@biancalupu.ro"
-                  className="flex items-center gap-3 font-mono text-sm text-[#011936]/70 hover:text-[#603140] transition-colors"
-                >
-                  <Mail className="w-4 h-4 text-[#CB7C89]" />
-                  contact@biancalupu.ro
-                </a>
-              </li>
+
               <li>
                 <span className="flex items-start gap-3 font-mono text-sm text-[#011936]/70">
                   <MapPin className="w-4 h-4 text-[#CB7C89] mt-0.5" />
@@ -119,7 +126,8 @@ export function Footer() {
         <div className="pt-8 border-t border-[#CB7C89]/30">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="font-mono text-xs text-[#011936]/50">
-              © {new Date().getFullYear()} Bianca Lupu. Toate drepturile rezervate.
+              © {new Date().getFullYear()} Bianca Lupu. Toate drepturile
+              rezervate.
             </p>
             <div className="flex gap-6">
               <Link
@@ -139,5 +147,5 @@ export function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }

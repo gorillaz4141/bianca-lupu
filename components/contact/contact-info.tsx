@@ -1,9 +1,17 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import Image from "next/image"
-import { RevealSection } from "@/components/reveal-section"
-import { Phone, Mail, MapPin, Clock, Instagram, Facebook, Linkedin } from "lucide-react"
+import { motion } from "framer-motion";
+import Image from "next/image";
+import { RevealSection } from "@/components/reveal-section";
+import {
+  Phone,
+  Mail,
+  MapPin,
+  Clock,
+  Instagram,
+  Facebook,
+  Linkedin,
+} from "lucide-react";
 
 const contactDetails = [
   {
@@ -13,13 +21,7 @@ const contactDetails = [
     href: "tel:0765844042",
     description: "Luni - Vineri, 9:00 - 18:00",
   },
-  {
-    icon: Mail,
-    label: "Email",
-    value: "contact@biancalupu.ro",
-    href: "mailto:contact@biancalupu.ro",
-    description: "Răspund în maxim 24h",
-  },
+
   {
     icon: MapPin,
     label: "Locație",
@@ -34,14 +36,17 @@ const contactDetails = [
     href: "#",
     description: "9:00 - 20:00",
   },
-]
+];
 
 export function ContactInfo() {
   return (
     <RevealSection direction="right">
       <div className="space-y-8">
         {/* Image card */}
-        <motion.div whileHover={{ scale: 1.02 }} className="relative rounded-3xl overflow-hidden shadow-xl">
+        <motion.div
+          whileHover={{ scale: 1.02 }}
+          className="relative rounded-3xl overflow-hidden shadow-xl"
+        >
           <div className="aspect-[4/3]">
             <Image
               src="/images/poza2.jpeg"
@@ -54,8 +59,12 @@ export function ContactInfo() {
           </div>
 
           <div className="absolute bottom-0 left-0 right-0 p-8">
-            <p className="font-sans text-2xl font-bold text-[#F1DEDE] mb-2">Bianca Lupu</p>
-            <p className="font-mono text-sm text-[#F1DEDE]/80">Psihoterapeut • București & Online</p>
+            <p className="font-sans text-2xl font-bold text-[#F1DEDE] mb-2">
+              Bianca Lupu
+            </p>
+            <p className="font-mono text-sm text-[#F1DEDE]/80">
+              Psihoterapeut • București & Online
+            </p>
           </div>
         </motion.div>
 
@@ -74,16 +83,24 @@ export function ContactInfo() {
               <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#CB7C89]/20 to-[#603140]/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                 <detail.icon className="w-6 h-6 text-[#603140]" />
               </div>
-              <p className="font-mono text-xs text-[#CB7C89] uppercase tracking-wider mb-1">{detail.label}</p>
-              <p className="font-sans text-lg font-semibold text-[#011936] mb-1">{detail.value}</p>
-              <p className="font-mono text-xs text-[#011936]/50">{detail.description}</p>
+              <p className="font-mono text-xs text-[#CB7C89] uppercase tracking-wider mb-1">
+                {detail.label}
+              </p>
+              <p className="font-sans text-lg font-semibold text-[#011936] mb-1">
+                {detail.value}
+              </p>
+              <p className="font-mono text-xs text-[#011936]/50">
+                {detail.description}
+              </p>
             </motion.a>
           ))}
         </div>
 
         {/* Social links */}
         <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
-          <p className="font-mono text-sm text-[#011936] mb-4">Urmărește-mă pe social media:</p>
+          <p className="font-mono text-sm text-[#011936] mb-4">
+            Urmărește-mă pe social media:
+          </p>
           <div className="flex gap-3">
             {[
               { icon: Instagram, href: "#", label: "Instagram" },
@@ -105,10 +122,17 @@ export function ContactInfo() {
         </div>
 
         {/* Call to action */}
-        <motion.div whileHover={{ scale: 1.02 }} className="bg-[#011936] rounded-2xl p-8 text-center">
-          <p className="font-sans text-xl font-bold text-[#F1DEDE] mb-2">Preferi să vorbim la telefon?</p>
+        <motion.div
+          whileHover={{ scale: 1.02 }}
+          className="bg-[#011936] rounded-2xl p-8 text-center"
+        >
+          <p className="font-sans text-xl font-bold text-[#F1DEDE] mb-2">
+            Preferi să vorbim la telefon?
+          </p>
           <p className="font-mono text-sm text-[#F1DEDE]/70 mb-6">
-            Sună-mă direct pentru a programa o ședință sau pentru orice întrebare.
+            Sună-mă direct pentru a programa o ședință sau pentru orice
+            întrebare. Dacă nu răspund, sunt în ședință. Voi reveni eu cu un
+            apel către tine în cel mai scurt timp.
           </p>
           <motion.a
             href="tel:0765844042"
@@ -122,5 +146,5 @@ export function ContactInfo() {
         </motion.div>
       </div>
     </RevealSection>
-  )
+  );
 }

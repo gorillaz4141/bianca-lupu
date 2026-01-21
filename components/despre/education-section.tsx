@@ -52,7 +52,7 @@ export function EducationSection() {
             Educație și Acreditări
           </h2>
           <p className="font-mono text-[#011936]/70 max-w-2xl mx-auto">
-            Calitatea serviciilor pe care le ofer este susținută de ani de studiu intens și formare continuă.
+            Practica mea este susținută de formare continuă, supervizare și actualizare constantă a metodelor folosite.
           </p>
         </RevealSection>
 

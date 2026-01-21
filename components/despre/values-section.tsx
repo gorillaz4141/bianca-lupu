@@ -2,38 +2,42 @@
 
 import { motion } from "framer-motion"
 import { RevealSection } from "@/components/reveal-section"
-import { Shield, Heart, Eye, Sparkles, Users, Compass } from "lucide-react"
+import { Shield, Heart, Sparkles, Users, Compass } from "lucide-react"
 
 const values = [
   {
     icon: Shield,
     title: "Confidențialitate",
-    description: "Tot ce împărtășești rămâne între noi. Spațiul terapeutic este sacru și protejat.",
+    description:
+      "Tot ce împărtășești rămâne între noi. Spațiul terapeutic este un sanctuar protejat, unde intimitatea ta este prioritară.",
   },
   {
     icon: Heart,
-    title: "Empatie",
-    description: "Te ascult fără judecată, cu înțelegere și compasiune autentică pentru experiența ta.",
-  },
-  {
-    icon: Eye,
-    title: "Autenticitate",
-    description: "Sunt prezentă cu tine ca om întreg, nu doar ca profesionist. Realitatea este baza încrederii.",
-  },
-  {
-    icon: Sparkles,
-    title: "Transformare",
-    description: "Cred cu tărie că fiecare persoană poate evolua și poate crea o viață mai împlinită.",
+    title: "Empatie și Acceptare",
+    description: "Te ascult fără judecată, oferindu-ți compasiune autentică. Aici ai libertatea de a fi tu însuți.",
   },
   {
     icon: Users,
-    title: "Respect",
-    description: "Valorizez unicitatea ta și respect ritmul tău de lucru și limitele personale.",
+    title: "Parteneriat (Alianță)",
+    description: "Nu suntem „expert și pacient”, ci o echipă. Colaborăm de la egal la egal pentru ce ți se potrivește.",
+  },
+  {
+    icon: Sparkles,
+    title: "Personalizare (Integrare)",
+    description:
+      "Nu folosesc metode standard. Adaptez PSIHOterapia la nevoile tale unice, combinând știința și creativitatea.",
   },
   {
     icon: Compass,
-    title: "Orientare",
-    description: "Te ghidez cu experiență și cunoștințe, dar tu ești cel care decide direcția călătoriei.",
+    title: "Siguranță emoțională",
+    description:
+      "Cabinetul este locul unde îți poți depune măștile. Îți ofer un cadru stabil și blând în care vulnerabilitatea devine putere.",
+  },
+  {
+    icon: Shield,
+    title: "Relația terapeutică",
+    description:
+      "Punem accent pe spațiul creat împreună — un mediu sigur unde vindecarea are loc prin conexiune, ritm și respect.",
   },
 ]
 
@@ -50,10 +54,10 @@ export function ValuesSection() {
         <RevealSection className="text-center mb-20">
           <span className="font-mono text-sm tracking-[0.2em] uppercase text-[#CB7C89] mb-4 block">Valorile Mele</span>
           <h2 className="font-sans text-3xl md:text-4xl lg:text-5xl font-bold text-[#011936] mb-6">
-            Pe ce mă bazez în terapie
+            Valorile pe care clădim schimbarea
           </h2>
           <p className="font-mono text-[#011936]/70 max-w-2xl mx-auto">
-            Aceste principii ghidează fiecare ședință și fiecare interacțiune cu clienții mei.
+            Un proces bun începe cu un cadru bun: siguranță, confidențialitate, parteneriat și personalizare reală.
           </p>
         </RevealSection>
 
