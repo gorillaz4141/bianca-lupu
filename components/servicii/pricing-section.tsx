@@ -52,7 +52,7 @@ export function PricingSection() {
                   </span>
                 </li>
               </ul>
-            </div>
+                    </div>
           </RevealSection>
 
           <RevealSection delay={0.1}>
@@ -68,25 +68,25 @@ export function PricingSection() {
                   <span className="font-mono text-sm text-[#F1DEDE]/80">
                     <strong className="text-[#F1DEDE]">Prioritizare</strong>: îți rezervi prioritar intervalul orar
                     preferat în agenda mea.
-                  </span>
+                    </span>
                 </li>
                 <li className="flex gap-3">
                   <span className="mt-2 w-1.5 h-1.5 rounded-full bg-[#CB7C89] flex-shrink-0" />
                   <span className="font-mono text-sm text-[#F1DEDE]/80">
                     <strong className="text-[#F1DEDE]">Consecvență</strong>: te ajută să rămâi motivat și să eviți
                     amânările care încetinesc progresul.
-                  </span>
+                    </span>
                 </li>
                 <li className="flex gap-3">
                   <span className="mt-2 w-1.5 h-1.5 rounded-full bg-[#CB7C89] flex-shrink-0" />
                   <span className="font-mono text-sm text-[#F1DEDE]/80">
                     <strong className="text-[#F1DEDE]">Simplitate</strong>: scapi de grija plății după fiecare întâlnire
                     și rămâi în experiență.
-                  </span>
-                </li>
-              </ul>
-            </div>
-          </RevealSection>
+                        </span>
+                      </li>
+                  </ul>
+                </div>
+            </RevealSection>
         </div>
 
         {/* Additional info */}

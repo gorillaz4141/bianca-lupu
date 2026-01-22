@@ -74,8 +74,7 @@ export function Footer() {
                 { label: "Acasă", href: "/" },
                 { label: "Despre Mine", href: "/despre" },
                 { label: "Servicii", href: "/servicii" },
-                { label: "Testimoniale", href: "/testimoniale" },
-                { label: "Blog", href: "/blog" },
+                
                 { label: "Contact", href: "/contact" },
               ].map((link) => (
                 <li key={link.href}>

@@ -1,7 +1,6 @@
 import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
 import { ContactHero } from "@/components/contact/contact-hero";
-import { ContactForm } from "@/components/contact/contact-form";
 import { ContactInfo } from "@/components/contact/contact-info";
 import { SmoothScroll } from "@/components/smooth-scroll";
 import { CursorFollower } from "@/components/cursor-follower";
@@ -20,11 +19,9 @@ export default function ContactPage() {
       <Navigation />
       <main>
         <ContactHero />
-        <div className="relative bg-gradient-to-b from-[#e8d0d0] to-[#F1DEDE] py-20">
-          <div className="max-w-7xl mx-auto px-6 lg:px-12">
-            <div className="grid lg:grid-cols-2 gap-16">
-              <ContactInfo />
-            </div>
+        <div className="relative bg-gradient-to-b from-[#e8d0d0] to-[#F1DEDE] py-12 sm:py-16 lg:py-20">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <ContactInfo />
           </div>
         </div>
       </main>

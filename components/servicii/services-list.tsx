@@ -7,7 +7,7 @@ import { User, Users, Video, Heart, Home } from "lucide-react"
 const services = [
   {
     icon: User,
-    title: "PSIHOterapie Individuală",
+    title: "Psihoterapie Individuală",
     subtitle: "Spațiu personal de explorare",
     description:
       "Ședințe one-on-one în care lucrăm împreună la înțelegerea și transformarea tiparelor care te împiedică să trăiești viața pe care o dorești.",
@@ -24,7 +24,7 @@ const services = [
   },
   {
     icon: Users,
-    title: "PSIHOterapie de Cuplu",
+    title: "Psihoterapie de Cuplu",
     subtitle: "Reconectare și înțelegere",
     description:
       "Spațiu neutru pentru ambii parteneri, unde putem explora dinamicile relației și găsi căi de comunicare mai bune și mai sănătoase.",
@@ -41,7 +41,7 @@ const services = [
   },
   {
     icon: Video,
-    title: "PSIHOterapie Online",
+    title: "Psihoterapie Online",
     subtitle: "Flexibilitate și accesibilitate",
     description:
       "Aceleași servicii de calitate, disponibile de oriunde te-ai afla. Perfect pentru cei cu program încărcat sau care locuiesc în afara Bucureștiului.",
@@ -101,7 +101,7 @@ export function ServicesList() {
         <RevealSection className="text-center mb-20">
           <span className="font-mono text-sm tracking-[0.2em] uppercase text-[#CB7C89] mb-4 block">Ce Oferim</span>
           <h2 className="font-sans text-3xl md:text-4xl lg:text-5xl font-bold text-[#011936] mb-6">
-            Servicii de PSIHOterapie
+            Servicii de Psihoterapie
           </h2>
           <p className="font-mono text-[#011936]/70 max-w-2xl mx-auto">
             Fiecare serviciu este creat pentru a-ți oferi exact tipul de suport de care ai nevoie.
