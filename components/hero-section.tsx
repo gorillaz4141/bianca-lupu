@@ -31,7 +31,7 @@ export function HeroSection() {
 
               <div className="relative h-full rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/images/poza2.jpeg"
+                  src="/bianca-2.jpeg"
                   alt="Bianca Lupu - Psihoterapeut"
                   fill
                   priority

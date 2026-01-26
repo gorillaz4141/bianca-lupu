@@ -101,7 +101,7 @@ export function AboutPreview() {
             <RevealSection delay={0.3}>
               <p className="font-mono text-sm sm:text-base text-[#011936]/70 leading-relaxed mt-10">
                 Formarea mea m-a purtat de la rigoarea academică din București
-                la experiențe internaționale în Atena și Roma. Sunt terapeut
+                la experiențe internaționale în Atena și Roma. Sunt psihoterapeut
                 format în Psihoterapie Integrativă, cu studii în psihoterapie
                 experiențială unificatoare și psihosexologie.
               </p>

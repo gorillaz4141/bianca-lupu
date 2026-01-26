@@ -61,89 +61,66 @@ export function AboutHero() {
             </p>
           </div>
 
-          {/* Image */}
+          {/* Hero Image */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
+            initial={{ opacity: 0, scale: 0.96 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
             className="relative max-w-md mx-auto"
           >
-            <div className="relative aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-2xl">
-              <Image
-                src="/images/poza1.jpeg"
-                alt="Bianca Lupu - Psihoterapeut"
-                fill
-                className="object-cover"
-                priority
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#603140]/20 via-transparent to-transparent" />
+            <div className="relative overflow-hidden rounded-[2.5rem] shadow-2xl bg-[#F1DEDE]">
+              <div className="relative aspect-[4/5]">
+                <Image
+                  src="/poza1.jpeg"
+                  alt="Bianca Lupu - Psihoterapeut"
+                  fill
+                  priority
+                  sizes="(max-width: 768px) 100vw, 480px"
+                  className="object-contain p-6"
+                />
+              </div>
             </div>
           </motion.div>
         </div>
 
-        {/* SECTION 2 – RIGHT */}
-        <div className="max-w-3xl ml-auto">
-          <h2 className="font-sans text-3xl font-semibold text-[#011936] mb-6">
-            Știință și simțire în echilibru
-          </h2>
-          <p className="font-mono text-lg text-[#011936]/70 leading-relaxed">
-            Masterul în Experiențială (PEU) și formarea în Psihoterapie
-            Integrativă mi-au oferit limbajul prin care mintea și corpul încep
-            să dialogheze. Am ales aceste școli pentru că pun accent pe trăirea
-            de „aici și acum”, transformând terapia dintr-o simplă discuție
-            într-o experiență vie de regăsire.
-          </p>
-        </div>
+        {/* IMAGE + TEXT FLOW */}
+        <ImageBreak src="/bianca-3.jpeg" align="right" />
 
-        {/* SECTION 3 – LEFT */}
-        <div className="max-w-3xl">
-          <h2 className="font-sans text-3xl font-semibold text-[#011936] mb-6">
-            Orizonturi noi asupra profunzimii umane
-          </h2>
-          <p className="font-mono text-lg text-[#011936]/70 leading-relaxed">
-            Specializarea în Psihosexologie la Sapienza Università di Roma a
-            fost momentul în care am înțeles că sănătatea emoțională este
-            incompletă fără acceptarea identității și a intimității noastre.
-            <br />
-            <br />
-            Această etapă mi-a rafinat capacitatea de a aborda teme sensibile cu
-            o relaxare caldă, oferindu-ți un spațiu liber de judecată, unde poți
-            fi tu însuți, fără măști.
-          </p>
-        </div>
+        <TextSection
+          align="right"
+          title="Știință și simțire în echilibru"
+          text="Masterul în Experiențială (PEU) și formarea în Psihoterapie Integrativă mi-au oferit limbajul prin care mintea și corpul încep să dialogheze. Am ales aceste școli pentru că pun accent pe trăirea de „aici și acum”, transformând terapia dintr-o simplă discuție într-o experiență vie de regăsire."
+        />
 
-        {/* SECTION 4 – RIGHT */}
-        <div className="max-w-3xl ml-auto">
-          <h2 className="font-sans text-3xl font-semibold text-[#011936] mb-6">
-            Creativitatea ca resursă de vindecare
-          </h2>
-          <p className="font-mono text-lg text-[#011936]/70 leading-relaxed">
-            Cred cu tărie că acolo unde cuvintele se opresc, începe vindecarea
-            prin simbol. Prin Art-Terapie, te ghidez să îți exprimi universul
-            interior într-un mod creativ și blând.
-            <br />
-            <br />
-            Nu este nevoie de talent, ci doar de deschiderea de a lăsa culorile
-            și formele să vorbească despre resursele tale nespuse.
-          </p>
-        </div>
+        <ImageBreak src="/bianca-4.jpeg" align="left" />
 
-        {/* SECTION 5 – LEFT */}
-        <div className="max-w-3xl">
-          <h2 className="font-sans text-3xl font-semibold text-[#011936] mb-6">
-            Misiunea mea: să te însoțesc spre întregire
-          </h2>
-          <p className="font-mono text-lg text-[#011936]/70 leading-relaxed">
-            Misiunea mea este să te ajut să îți recapeți liniștea interioară și
-            să îți construiești o reziliență autentică.
-            <br />
-            <br />
-            Îmi doresc ca la finalul călătoriei noastre, să simți că ai energia
-            și claritatea de a-ți trăi viața cu bucurie. Sunt aici să îți ofer
-            suportul, metoda și prezența de care ai nevoie pentru a deveni
-            propriul tău aliat.
-          </p>
-        </div>
+        <TextSection
+          align="left"
+          title="Orizonturi noi asupra profunzimii umane"
+          text="Specializarea în Psihosexologie la Sapienza Università di Roma a fost momentul în care am înțeles că sănătatea emoțională este incompletă fără acceptarea identității și a intimității noastre.
+
+Această etapă mi-a rafinat capacitatea de a aborda teme sensibile cu o relaxare caldă, oferindu-ți un spațiu liber de judecată, unde poți fi tu însuți, fără măști."
+        />
+
+        <ImageBreak src="/bianca-5.jpeg" align="right" />
+
+        <TextSection
+          align="right"
+          title="Creativitatea ca resursă de vindecare"
+          text="Cred cu tărie că acolo unde cuvintele se opresc, începe vindecarea prin simbol. Prin Art-Terapie, te ghidez să îți exprimi universul interior într-un mod creativ și blând.
+
+Nu este nevoie de talent, ci doar de deschiderea de a lăsa culorile și formele să vorbească despre resursele tale nespuse."
+        />
+
+        <ImageBreak src="/bianca-6.jpeg" align="left" />
+
+        <TextSection
+          align="left"
+          title="Misiunea mea: să te însoțesc spre întregire"
+          text="Misiunea mea este să te ajut să îți recapeți liniștea interioară și să îți construiești o reziliență autentică.
+
+Îmi doresc ca la finalul călătoriei noastre, să simți că ai energia și claritatea de a-ți trăi viața cu bucurie. Sunt aici să îți ofer suportul, metoda și prezența de care ai nevoie pentru a deveni propriul tău aliat."
+        />
 
         {/* FINAL NOTE */}
         <div className="text-center pt-12">
@@ -154,5 +131,66 @@ export function AboutHero() {
         </div>
       </div>
     </section>
+  );
+}
+
+/* ---------------- IMAGE BREAK ---------------- */
+
+function ImageBreak({
+  src,
+  align = "center",
+}: {
+  src: string;
+  align?: "left" | "right" | "center";
+}) {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-120px" }}
+      transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+      className={`relative max-w-3xl mx-auto ${
+        align === "left"
+          ? "md:mr-auto md:ml-0"
+          : align === "right"
+          ? "md:ml-auto md:mr-0"
+          : ""
+      }`}
+    >
+      <div className="relative overflow-hidden rounded-3xl shadow-2xl bg-[#F1DEDE]">
+        <div className="relative aspect-[4/5]">
+          <Image
+            src={src}
+            alt="Bianca – moment din parcursul profesional"
+            fill
+            sizes="(max-width: 768px) 100vw, 768px"
+            className="object-contain p-6"
+          />
+        </div>
+      </div>
+    </motion.div>
+  );
+}
+
+/* ---------------- TEXT SECTION ---------------- */
+
+function TextSection({
+  title,
+  text,
+  align = "left",
+}: {
+  title: string;
+  text: string;
+  align?: "left" | "right";
+}) {
+  return (
+    <div className={`max-w-3xl ${align === "right" ? "ml-auto" : ""}`}>
+      <h2 className="font-sans text-3xl font-semibold text-[#011936] mb-6">
+        {title}
+      </h2>
+      <p className="font-mono text-lg text-[#011936]/70 leading-relaxed whitespace-pre-line">
+        {text}
+      </p>
+    </div>
   );
 }

@@ -40,7 +40,7 @@ export function SolutionSection() {
             <div className="relative aspect-[4/5] max-w-md mx-auto lg:mx-0">
               <motion.div style={{ y: imageY }} className="relative h-full rounded-3xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/images/poza3.jpeg"
+                  src="/bianca-3.jpeg"
                   alt="Bianca Lupu - Spațiu sigur pentru terapie"
                   fill
                   className="object-cover"

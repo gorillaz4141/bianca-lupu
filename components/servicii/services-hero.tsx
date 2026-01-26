@@ -96,7 +96,7 @@ export function ServicesHero() {
                 className="absolute bottom-0 left-0 w-2/3 h-2/3 rounded-3xl overflow-hidden shadow-2xl border-4 border-[#F1DEDE]"
               >
                 <Image
-                  src="/images/poza4.jpeg"
+                  src="/bianca-1.jpeg"
                   alt="Ședințe online disponibile"
                   fill
                   className="object-cover"
